@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Task_1_Form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="form-paymentForm">
+    <h2>ЗАПОВНІТЬ ФОРМУ</h2>
+    <div class="buttons">
+      <button type="button" class="individual">Фіз.особа</button>
+      <button type="button" class="legal">Юр.особа</button>
+    </div>
+    <div class="userInfo">
+      <form action="index.html" method="post" class="infoForm">
+        <div class="leftSide">
+          <div class="inlineblock-text">
+            <p>Ім'я</p>
+            <p class="leftSide-text-sername">Фамілія</p>
+          </div>
+          <div class="inlineblokc-input">
+            <input type="text" class="name">
+            <input type="text" class="sername">
+          </div>
+          <p class="company-inputText">Назва компанії, організації</p>
+          <input type="text" class="company">
+          <p>E-mail-адрес</p>
+          <input type="text" name="e-mail">
+          <p>Номер телефону</p>
+          <input type="text" name="phoneNum">
+        </div>
+        <div class="rightSide">
+          <p>Країна</p>
+          <input type="text" class="country">
+          <div class="inlineblock-text">
+            <p>Місто</p>
+            <p class="leftSide-text-state">Штат, район</p>
+          </div>
+          <div class="inlineblokc-input">
+            <input type="text" class="city">
+            <input type="text" class="state">
+          </div>
+          <p>Адреса</p>
+          <input type="text" class="adress">
+          <p>Поштовий індекс</p>
+          <input type="text" class="ZIPcode">
+        </div>
+      </form>
+      <div class="paymentInfo">
+        <h2>ВИДИ ДОПОМОГИ</h2>
+        <h5>Ви можете змінити вид допомоги</h5>
+        <div class="helpKind">
+          <div class="helpKindButton"><img class="helpKind-img" src="img/hold.svg"></div>
+          <div class="helpKindText">Зробити</div>
+          <div class="helpKindButton"><img class="helpKind-img" src="img/wallet.svg"></div>
+          <div class="helpKindText">Фінансова допомога</div>
+          <div class="helpKindButton"><img class="helpKind-img" src="img/clothes.svg"></div>
+          <div class="helpKindText">Матеріальна допомога</div>
+          <div class="helpKindButton"><img class="helpKind-img" src="img/heart.svg"></div>
+          <div class="helpKindText">Волонтерство</div>
+        </div>
+        <div class="paymentKind">
+          <div class="paymentKind-text">
+            <p>Спосіб оплати</p>
+            <p class="paymentKind-text-right">Введіть наступні дані</p>
+          </div>
+          <div class="paymentWay">
+            <div class="paymentSystem">
+              <div class="paymentSystemName"><img class="paymentSystem-img" src="img/visa.svg">
+                <div class="paymentSystem-text">Visa/MasterCard</div>
+              </div>
+              <div class="paymentSystemName">
+                <div class="paymentSystem-pryvat">ПРИВАТ 24</div>
+                <div class="paymentSystem-text">Приват24</div>
+              </div>
+              <div class="paymentSystemName"><img class="paymentSystem-img" src="img/terminal.svg">
+                <div class="paymentSystem-text">Термінали України</div>
+              </div>
+              <div class="paymentSystemName"><img class="paymentSystem-img-webMoney" src="img/webmoney.svg">
+                <div class="paymentSystem-text-webmoney">WebMoney</div>
+              </div>
+              <div class="paymentSystemName"><img class="paymentSystem-img" src="img/paypal.svg">
+                <div class="paymentSystem-text">PayPal</div>
+              </div>
+            </div>
+            <div class="cardInfo">
+              <form class="cardInfo-number">
+                <div class="cardInfo-form-text">Номер картки</div>
+                <input type="number" class="cardInfo-input">
+                <input type="number" class="cardInfo-input">
+                <input type="number" class="cardInfo-input">
+                <input type="number" class="cardInfo-input">
+                <div class="cardInfo-form-cvv-date-text-container">
+                  <div>Термін дії</div>
+                  <div class="cardInfo-form-cvv-date-text">CVC/CVV</div>
+                </div>
+                <div class="cardInfo-form-cvv-date">
+                  <input type="number" class="cardInfo-cvv-date-input">
+                  <input type="number" class="cardInfo-cvv-date-input">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="main-button">Допомогти</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+
+* {
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+body {
+  background-color: #8087a1;
+}
+h2, h5 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #363a5d;
+}
+.form-paymentForm {
+  width: 90%;
+  background-color: #fff;
+  margin: 8rem auto;
+  padding: 3rem 0;
+  border-radius: 3%;
+  position: relative;
+}
+/* closing criss-cross */
+.form-paymentForm::before{
+  content:"\2573";
+  color: #586c8f;
+  position: absolute;
+  top: -4%;
+  left: 100%;
+}
+.form-paymentForm:hover::before{
+  -webkit-transform: scale(2);
+ transform: scale(2);
+ }
+/* select buttons */
+button {
+  height: 3.3rem;
+  width: 10rem;
+  border: 2px solid #363a5d;
+  color: #363a5d;
+  font-size: 1.3rem;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.individual {
+  border-radius: 10% 0 0 10%;
+}
+.legal {
+  border-radius: 0 10% 10% 0;
+}
+.active {
+  background-color: #363a5d;
+  color: #fff;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+
+}
+/* userInfo form */
+input {
+  background-color: #f3f7fa;
+  border-radius: 10%;
+  border: none;
+  height: 3rem;
+  width: 18rem;
+}
+p {
+  margin-top: 2rem;
+}
+.infoForm {
+  display: flex;
+  justify-content: space-around;
+}
+.name ,.sername, .city, .state,.ZIPcode {
+  width: 9rem;
+}
+.inlineblock-text {
+  display: flex;
+}
+.leftSide-text-sername {
+  margin-left: 7.8rem;
+}
+.leftSide-text-state {
+  margin-left: 7rem;
+}
+.company-inputText {
+  position: relative;
+}
+.company-inputText::after {
+  position: absolute;
+  left: 105%;
+  top: 150%;
+  content: "+Логотип";
+  color: #4a91e3;
+  font-size: 0.9rem;
+}
+
+/* payment section */
+.paymentInfo {
+  margin-top: 3rem;
+}
+.helpKind {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 60px 0 80px;
+}
+
+.helpKindButton {
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid #c5d5e5;
+  border-radius: 10%;
+  position:relative;
+}
+.helpKindText {
+margin: 1.6rem 1rem 2rem 0.2rem;
+width: 5rem;
+color: #c5d5e5;
+}
+.paymentKind {
+  width:90%;
+  border: 1px solid #c5d5e5;
+  border-radius: 5%;
+  margin-left: 3rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.paymentKind-text {
+  display: flex;
+}
+.paymentKind p {
+  margin-top: 0.8rem;
+  color: #c5d5e5;
+}
+.paymentKind-text-right {
+  margin-left: 42%;
+}
+.paymentWay {
+  display: flex;
+}
+.paymentSystem {
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.paymentSystemName {
+  width: 26%;
+  color: #fff;
+  background-color: #c5d5e5;
+  font-size: 0.8rem;
+  height: 4rem;
+  border-radius: 10%;
+  margin: 0.7rem
+}
+.cardInfo {
+  margin: 0.7rem;
+  width: 50%;
+  height: 10rem;
+  border-radius: 10%;
+  background-color: #c5d5e5;
+  display: flex;
+}
+/* hover triangles */
+.helpKindButton:hover::before {
+content: " ";
+position: absolute;
+top:100%;
+left: 35%;
+width: 0;
+height: 0;
+border: solid;
+border-width: 0 10px 13px 11px;
+border-color: transparent transparent  #c5d5e5 transparent;
+}
+.helpKindButton:hover::after {
+  content: " ";
+  position: absolute;
+  top:101%;
+  left: 35%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 13px 11px;
+  border-color: transparent transparent #fff transparent;
+}
+
+/* hover triangles end*/
+
+
+/* paymentSystem buttons */
+.helpKind-img {
+  margin: 20px 20px 30px;
+}
+.paymentSystem-img {
+  margin-left: 40px;
+}
+.paymentSystem-text {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+.paymentSystem-pryvat {
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 15px
+}
+.paymentSystem-text-webmoney {
+  margin-top: -17px;
+  text-align: center;
+}
+.paymentSystem-img-webMoney {
+  margin-left: 30px;
+}
+/* cardInfo */
+.cardInfo-input {
+width: 4.5rem;
+margin-right: 0.5rem;
+}
+.cardInfo-number {
+  margin: 0.5rem auto;
+}
+.cardInfo-form-text {
+  color: #fff;
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+.cardInfo-form-cvv-date {
+  display: flex;
+  justify-content: space-between;
+}
+.cardInfo-cvv-date-input{
+  width:9rem;
+}
+
+.cardInfo-form-cvv-date-text-container {
+  display: flex;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+.cardInfo-form-cvv-date-text {
+  margin-left: 7.8rem;
+}
+/* input hover */
+.helpKindButton:hover, .paymentSystemName:hover{
+  background-color: #9d5d9a;
+}
+input:hover {
+  background-color: #c5b7c4;
+}
+/* main button */
+.main-button {
+  margin: 1.5rem 43%;
+  border-radius: 10%;
+  background: linear-gradient(to left,  #8d68ab,#e53657);
+  color: #fff;
+  border: none;
+  font-size: 0.9rem;
+}
+.main-button:hover {
+  box-shadow: 0 12px 16px 0 rgb(249, 208, 216), 0 17px 50px 0 rgb(249, 208, 216);
+}
